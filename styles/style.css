@@ -24,6 +24,11 @@ h2 {
     line-height: 1.35;
 }
 
+p {
+    font-size: 18px;
+    line-height: 1.39; 
+}
+
 /*  Author */
 
 #author {
@@ -38,18 +43,22 @@ h2 {
 }
 
 #author nav ul {
-    list-style: none;   
+    list-style-type: none; 
+      
 }
 
 #author nav ul li {
     display: inline-block;
-    color: #828282;
     font-family: 'Open Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.38;
     padding-right: 34px;
+}
+
+#author nav ul li a {
+    text-decoration: none;
+    color: #828282;
 }
 
 #author nav ul li span {
@@ -64,26 +73,18 @@ h2 {
 /* About */
 
 #about {
-    background-color: #F6F6F6;
     height: 517px;
-    display: flex;  
+    display: flex;
+    background-color: #F6F6F6;
 }
 
 .about-text {
-    margin: auto;
-    max-width: 480px;  
+    max-width: 480px;
+    margin: auto;  
 }
 
 .about-text h2 {
     margin-top: 0;
-}
-
-.about-text p {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.39;    
 }
 
 /* Skills */
@@ -96,12 +97,6 @@ h2 {
     padding-top: 80px;
 }
 
-#skills p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.39;
-}
-
 .icons {
     display: flex;
     margin-top: 80px;
@@ -112,7 +107,7 @@ h2 {
 }
 
 .icons figcaption {
-    font-family: 'Gilroy-Bold';
+    font-family: 'Gilroy-Bold', 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.2;
     padding-top: 23px;
@@ -171,8 +166,6 @@ h2 {
 }
 
 .contacts p {
-    font-size: 18px;
-    line-height: 1.39; 
     margin-bottom: 80px;
 }
 
@@ -197,9 +190,11 @@ h2 {
     list-style: none;
 }
 
+p .social-text {
+    margin-top: 40px;
+}
+
 .social-text {
     color: #828282;
     font-size: 14px;
-    line-height: 1.35px;
-    margin-top: 40px;
 }
